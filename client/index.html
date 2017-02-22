@@ -28,10 +28,19 @@
       <h1>chatterbox</h1>
       <div>
         <span>Room:</span>
-        <select id="roomList">
+        <select id="roomSelect">
           <option value="new-room">New room...</option>
         </select>
       </div>
+      <div id="send" class="sendMsg">
+          <input id="message" type="text" name="message">
+          <button id="submit" class="submit" name="submitMsg">Submit</button>
+      </div>
+      <div class="addRoom">
+          <input type="text" name="room">
+          <button onClick='app.renderRoom()'name="submitMsg">Add Room</button>
+      </div>
+
     </div>
     <div id="chats">
 
